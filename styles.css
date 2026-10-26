@@ -193,7 +193,7 @@ blockquote span { color: var(--wrist); }
 }
 .mail:hover { background-position: -100% 0; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
-.contact-grid { margin-top: 3.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.contact-grid { margin-top: 3.5rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .contact-grid a { background: var(--ink); padding: 1.4rem 1.3rem; text-decoration: none; display: flex; flex-direction: column; gap: .5rem; transition: background .25s; min-width: 0; }
 .contact-grid a:hover { background: var(--ink-2); }
 .contact-grid dt, .contact-grid .k { font: 500 .7rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
@@ -220,6 +220,7 @@ footer a:hover { color: var(--fg); }
   .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 42vw; }
   .g-wide { grid-column: span 2; }
 }
+@media (max-width: 640px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 520px) {
   .facts { grid-template-columns: minmax(0, 1fr); }
   .hero .wrap { padding-block: 7rem 2.5rem; }
