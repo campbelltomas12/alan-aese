@@ -195,7 +195,7 @@ blockquote span { color: var(--wrist); }
 .now b { color: var(--wrist); font-weight: 500; }
 
 /* Galería */
-.gallery { margin-top: 3rem; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: clamp(150px, 19vw, 250px); gap: .6rem; }
+.gallery { margin-top: 3rem; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: clamp(150px, 19vw, 250px); grid-auto-flow: dense; gap: .6rem; }
 .gallery a { position: relative; overflow: hidden; border-radius: 4px; display: block; background: var(--ink-2); }
 .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1), filter .4s; filter: saturate(.9); }
 .gallery a:hover img { transform: scale(1.04); filter: saturate(1.1); }
@@ -422,10 +422,9 @@ footer a:hover { color: var(--fg); }
         <a href="hires/alan-aese-02.jpg" target="_blank" rel="noopener"><img src="img/alan-aese-02-800.jpg" alt="Alan Æse ajustando el mixer en Club Room" loading="lazy"></a>
         <a href="hires/alan-aese-06.jpg" target="_blank" rel="noopener"><img src="img/alan-aese-06-800.jpg" alt="Alan Æse sonriendo tras los controles en un evento al aire libre" loading="lazy" style="object-position:40% 30%"></a>
         <a class="g-wide" href="hires/alan-aese-05.jpg" target="_blank" rel="noopener"><img src="img/alan-aese-05-800.jpg" srcset="img/alan-aese-05-800.jpg 800w, img/alan-aese-05-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Alan Æse en movimiento durante un set" loading="lazy"></a>
-        <a class="g-wide" href="hires/alan-aese-01.jpg" target="_blank" rel="noopener"><img src="img/alan-aese-01-800.jpg" srcset="img/alan-aese-01-800.jpg 800w, img/alan-aese-01-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Alan Æse bajo las luces de Club Room" loading="lazy"></a>
       </div>
       <div class="press-dl">
-        <p><strong>Kit de prensa:</strong> 6 fotos en alta resolución, listas para flyers y redes.</p>
+        <p><strong>Kit de prensa:</strong> 6 fotos en alta resolución (incluida la de portada), listas para flyers y redes.</p>
         <a class="btn btn-hot" href="alan-aese-fotos.zip" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0-5-5m5 5 5-5M5 20h14"/></svg>Descargar fotos (ZIP · 2,9 MB)</a>
       </div>
